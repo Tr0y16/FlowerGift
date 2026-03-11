@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flower Gift</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+
+header{
+    background:#d63384;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    font-size:26px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+/* HERO SECTION */
+
+.hero{
+    background:linear-gradient(#ffd6e7,#ffb6d9);
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:55px;
+    color:#a0005a;
+}
+
+.hero p{
+    font-size:20px;
+    color:#444;
+}
+
+.flower{
+    font-size:120px;
+}
+
+/* BUTTON */
+
+button{
+    padding:12px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:8px;
+    background:#ff4da6;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#e60073;
+}
+
+/* FOOTER */
+
+footer{
+    background:#ff99cc;
+    text-align:center;
+    padding:20px;
+    color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Flower Gift
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Gallery</a>
+<a href="#">Message</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="flower">🌸</div>
+
+<h1>Giving You a Flower</h1>
+
+<p>A small flower to brighten your day.</p>
+
+<button onclick="giveFlower()">Receive Flower</button>
+
+<p id="message"></p>
+
+</section>
+
+<footer>
+
+<p>Made with ❤️ and flowers</p>
+
+</footer>
+
+<script>
+
+function giveFlower(){
+document.getElementById("message").innerHTML =
+"Here is a beautiful flower for you 🌹";
+}
+
+</script>
+
+</body>
+</html>
